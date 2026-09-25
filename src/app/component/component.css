@@ -15,11 +15,34 @@
     background: url("/assets/headerbg.png") lightgray 50% / cover no-repeat;
 }
 
+.icon-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-right-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+
 .warning {
     background: black;
     width: 316px;
-    height: 355px;
+    min-height: 355px;
     border-radius: 31.731px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    position: fixed;
+
 }
 
 .warning-icon {
@@ -31,6 +54,10 @@
     font-weight: 700;
     line-height: normal;
 
+    background-color: #F235FF;
+    width: 20px;
+    height: 20px;
+    border-radius: 23px;
 }
 
 .warning-title {
@@ -41,9 +68,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+   
 }
 
-.warning-message {
+
+.warning-text {
     width: 268.707px;
     color: #FFF;
     text-align: center;
@@ -52,6 +82,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: center;
 }
 
 .warning-question {
@@ -68,6 +99,8 @@
     width: 238px;
     height: 28px;
     background: #8FC5E4;
+    border-style: none;
+    border-radius: 6px ;
 
     text-align: center;
     font-family: "Andika New Basic";
@@ -75,12 +108,16 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
 
 .warning-button-no {
     width: 238px;
     height: 28px;
     background: #C9C4B5;
+    border-style: none;
+    border-radius: 6px;
+
 
     text-align: center;
     font-family: "Andika New Basic";
