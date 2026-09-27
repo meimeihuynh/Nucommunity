@@ -1,16 +1,17 @@
 import "./component.css";
-import { MenuHamburgerIcon, MagnifyingGlassIcon, BellIcon } from '@navikt/aksel-icons';
+import { MenuHamburgerIcon, MagnifyingGlassIcon, BellIcon, ArrowRightLeftIcon } from '@navikt/aksel-icons';
 
 
 
 
-function Header() {
+function PageHeader({ image, title, variant = "home", character}) {
   return (
     <header>
-      
-      <div className="header">
+      <div className={`page-header page-header--${variant}`}>
+        <img src={image} alt={title} className="page-header-banner" />
+        <div className="white-transition"/>
 
-       <img src="\assets\NuCarnivalLogo.png" className="NUlogo"/>
+       <img src="/assets/NuCarnivalLogo.png" className="NUlogo-main"/>
 
        <div className="icons-nav">
         <MenuHamburgerIcon className="menu-icon" fontSize="1.5rem" />
@@ -22,9 +23,18 @@ function Header() {
         
        </div>
 
+      {variant === "character" && (
+       <div className="character-icon">
+         <img src={character.icon} alt={character.name}/>
+         <h2 className="iconname">{character.name}</h2>
+         <button className="switchbutton">
+            <ArrowRightLeftIcon title="a11y-title" fontSize="1.5rem" />
+          </button>
+       </div>
+      )}
       </div>
     </header>
   );
 }
 
-export default Header;
+export default PageHeader;
