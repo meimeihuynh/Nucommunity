@@ -3,15 +3,14 @@ import { MenuHamburgerIcon, MagnifyingGlassIcon, BellIcon, ArrowRightLeftIcon } 
 
 
 
-
 function PageHeader({ image, title, variant = "home", character}) {
   return (
     <header>
       <div className={`page-header page-header--${variant}`}>
-        <img src={image} alt={title} className="page-header-banner" />
+        {image && <img src={image} alt={title} className="page-header-banner" />}
         <div className="white-transition"/>
 
-       <img src="/assets/NuCarnivalLogo.png" className="NUlogo-main"/>
+       <img src="/assets/NuCarnivalLogo.png" className="NUlogo-main" alt="Nu: Carnival"/>
 
        <div className="icons-nav">
         <MenuHamburgerIcon className="menu-icon" fontSize="1.5rem" />
@@ -28,7 +27,7 @@ function PageHeader({ image, title, variant = "home", character}) {
          <img src={character.icon} alt={character.name}/>
          <h2 className="iconname">{character.name}</h2>
          <button className="switchbutton">
-            <ArrowRightLeftIcon title="a11y-title" fontSize="1.5rem" />
+            <ArrowRightLeftIcon/>
           </button>
        </div>
       )}

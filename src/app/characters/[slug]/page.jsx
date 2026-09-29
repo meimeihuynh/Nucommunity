@@ -1,17 +1,22 @@
-import { characters } from "@/app/data/characters";
-import PageHeader from "@/app/component/Header";
+import { characters } from "../../data/characters";
+import PageHeader from "../../component/Header";
 
-function CharacterPage({ params }) {
-    const selectedCharacter = characters[params.slug];
+async function CharacterPage({ params }) {
+    const { slug } = await params;
+    const Character = characters[slug];
 
     return (
         <div>
             <PageHeader
-                image={selectedCharacter.banner}
-                title={selectedCharacter.name}
+                image={Character.banner}
+                title={Character.name}
                 variant="character"
-                character={selectedCharacter}
+                character={Character}
             />
         </div>
+
+        
     );
 }
+
+export default CharacterPage
