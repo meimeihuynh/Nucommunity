@@ -89,13 +89,15 @@
 }
 
 .icons-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px; 
+  z-index: 2;
 }
 
 .right-icon-group {
@@ -243,4 +245,30 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/*CHARACTER SELECTOR-----------------------------------------------------------------------*/
+
+.selector-box {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 675px;
+    border-radius: 30px;
+
+    margin-top: 180px;
+    background-color: black;
+
+}
+
+.character-select
+
+.characterselector-icon {
+    width: 106.7px;
+    height: 89.057px;
+
+    /*change image icon*/
+
+
 }

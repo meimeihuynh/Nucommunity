@@ -1,9 +1,18 @@
+"use client";
+
 import "./component.css";
+import CharacterSelector from "./CharacterSelector";
+import { useState } from "react";
 import { MenuHamburgerIcon, MagnifyingGlassIcon, BellIcon, ArrowRightLeftIcon } from '@navikt/aksel-icons';
 
 
 
 function PageHeader({ image, title, variant = "home", character}) {
+
+  const [selectorOpen, setSelectorOpen] = useState(false);
+
+  console.log("selectorOpen is:", selectorOpen);
+
   return (
     <header>
       <div className={`page-header page-header--${variant}`}>
@@ -26,10 +35,14 @@ function PageHeader({ image, title, variant = "home", character}) {
        <div className="character-profile">
          <img src={character.icon} alt={character.name} className="character-icon"/>
          <h2 className="iconname">{character.name}</h2>
-         <button className="switchbutton">
-            <ArrowRightLeftIcon/>
+         <button  className="switchbutton" onClick={() => setSelectorOpen(true)} >
+            <ArrowRightLeftIcon title="switch character"/>
           </button>
        </div>
+      )}
+
+      {selectorOpen && (
+        <CharacterSelector onClose={() => setSelectorOpen(false)} />
       )}
       </div>
     </header>
