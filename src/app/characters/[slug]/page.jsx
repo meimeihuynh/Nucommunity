@@ -1,4 +1,5 @@
-import { characters } from "../../data/characters";
+import { characters, categories } from "../../data/characters";
+import CategoryMenu from "../../component/Categorymenu";
 import PageHeader from "../../component/Header";
 
 async function CharacterPage({ params }) {
@@ -13,6 +14,8 @@ async function CharacterPage({ params }) {
                 variant="character"
                 character={Character}
             />
+
+            <CategoryMenu categories={Character.categories}/>
         </div>
 
         

@@ -23,8 +23,8 @@ function PageHeader({ image, title, variant = "home", character}) {
        </div>
 
       {variant === "character" && (
-       <div className="character-icon">
-         <img src={character.icon} alt={character.name}/>
+       <div className="character-profile">
+         <img src={character.icon} alt={character.name} className="character-icon"/>
          <h2 className="iconname">{character.name}</h2>
          <button className="switchbutton">
             <ArrowRightLeftIcon/>

@@ -1,11 +1,24 @@
+/*HEADER-------------------------------------------------*/
+
+.page-header,
 .NUlogo-main {
     position: absolute;
-    width: 179px;
-    height: 70px;
+}
 
-    margin-top: 75px;
-    margin-right: 200px;
-    
+.page-header--home .NUlogo-main {
+
+    width: 159px;
+
+    margin-top: 82px;
+    margin-right: 200px; 
+}
+
+
+.page-header--character .NUlogo-main {
+    width: 133px;
+    height: 50px;
+    aspect-ratio: 1/1   ;
+
 }
 
 .page-header {
@@ -27,7 +40,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50%;
     display: block;
+    background-color: lightgray 50%;
 }
 
 .switchbutton {
@@ -39,23 +54,29 @@
     border-radius: 24px;
     box-sizing: content-box;
 
-    position: absolute;
-
     font-size:17px;
+}
+
+.character-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+
+    margin-top: 80px;
+    margin-right: 200px;
 }
 
 .character-icon {
     width: 73px;
     height: 73px;
     border-radius: 21px;
-    
-    position: absolute;
 
 }
 
 .iconname {
-    position: absolute;
-    
+    margin: 0;
 }
 
 .white-transition {
@@ -63,18 +84,21 @@
     height: 55px;
     margin-top: 102px;
 
-    position: absolute;
+    position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 4.31%, #FFF 70.57%);
 }
 
-.icon-nav {
+.icons-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    inset: 0;
+    z-index: 2;
+
 }
 
-.icon-right-group {
+.right-icon-group {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -84,6 +108,36 @@
     display: flex;
     
 }
+
+/*CATEGORY MENU--------------------------------------------------------------*/
+
+.category-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    padding: 10px 33px 7px 0px;
+    gap: 15px;
+
+    column-rule: 1px solid black;
+    border-bottom: 1px solid black ;
+}
+.category-tab {
+    opacity: 0.36;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 13.967px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    background: none;
+    border-style: none;
+}
+
+/*WARNING--------------------------------------------------------------------*/
 
 .warning {
     background: black;
