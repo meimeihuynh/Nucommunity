@@ -254,19 +254,30 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 675px;
+    height: 600px;
     border-radius: 30px;
 
+    z-index: 100;
+
     margin-top: 180px;
-    background-color: black;
+    background-color: rgb(138, 137, 137);
 
 }
 
-.character-select
+.character-select {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
 
 .characterselector-icon {
-    width: 106.7px;
-    height: 89.057px;
+
+    padding: 20px;
+    width: auto;
+    height: 90px;
 
     /*change image icon*/
 
