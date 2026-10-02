@@ -1,16 +1,15 @@
 
 
-function HelpPage() {
+function GuidePage() {
 
     return(
-          <div className="content">
+
+        <div className="content">
 
         <div className="newspick"></div>
         <div className="notices"></div>
-    </div>
-
+        </div>
     );
-
 }
 
-export default HelpPage;
+export default GuidePage;

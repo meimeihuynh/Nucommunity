@@ -1,5 +1,5 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import "./component.css";
 import CharacterSelector from "./CharacterSelector";
 import { useState } from "react";
@@ -10,6 +10,7 @@ import { MenuHamburgerIcon, MagnifyingGlassIcon, BellIcon, ArrowRightLeftIcon } 
 function PageHeader({ image, title, variant = "home", character}) {
 
   const [selectorOpen, setSelectorOpen] = useState(false);
+  const router = useRouter();
 
   console.log("selectorOpen is:", selectorOpen);
 
@@ -19,7 +20,7 @@ function PageHeader({ image, title, variant = "home", character}) {
         {image && <img src={image} alt={title} className="page-header-banner" />}
         <div className="white-transition"/>
 
-       <img src="/assets/NuCarnivalLogo.png" className="NUlogo-main" alt="Nu: Carnival"/>
+       <img src="/assets/NuCarnivalLogo.png" className="NUlogo-main" alt="Nu: Carnival" onClick={() => router.push("  /")}/>
 
        <div className="icons-nav">
         <MenuHamburgerIcon className="menu-icon" fontSize="1.5rem" />

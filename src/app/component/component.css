@@ -111,12 +111,24 @@
     
 }
 
+/*FOOTER---------------------------------------------------------------------*/
+    
+.footer {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: black
+}
 /*CATEGORY MENU--------------------------------------------------------------*/
 
 .category-nav {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 30px;
     padding: 10px 33px 7px 0px;
@@ -134,9 +146,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: black;
+    text-decoration: none;
 
     background: none;
     border-style: none;
+    
 }
 
 /*WARNING--------------------------------------------------------------------*/

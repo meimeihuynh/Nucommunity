@@ -1,5 +1,14 @@
 
 
-export default function OfficialPage() {
-  return <div>Official notices content here</div>;
+function OfficialPage() {
+  return( 
+    <div className="content">
+
+        <div className="newspick"></div>
+        <div className="notices"></div>
+    </div>
+  
+);
 }
+
+export default OfficialPage;
