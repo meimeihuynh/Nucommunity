@@ -29,6 +29,9 @@
 **Design Documentation**
 https://innlandet-my.sharepoint.com/:f:/g/personal/ngohuy02_innlandetfylke_no/IgCy6Ee-c4aHRL8vS4RhyMBwAbAXxREuwGFSn62MYSCrID8?e=nIxq3k
 
+**Development Documentation**
+https://innlandet-my.sharepoint.com/:w:/g/personal/ngohuy02_innlandetfylke_no/IQCV28WYkqJSSplyo5Pb8lXnAetdGZFPGpZqw81ouNmE-0Q?e=99fL4t
+
 ## Testing
 ----
 
