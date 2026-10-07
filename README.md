@@ -2,6 +2,7 @@
 
 ## Description
 ----
+NU: Community is a community platform where fans can discuss, share and help each other. It has a general community hub plus a dedicated page for each character, and each character page shares the same layout but is themed to that character. Discussions are organized into categories that differ between the hub and the character pages.
 
 ## Features
 ----
@@ -17,12 +18,36 @@
 
 ## Installation / Setup 
 ----
+### Prerequisites
+- [Node.js](https://nodejs.org/) 20.9 or newer
+- npm (comes with Node.js)
+
+### Steps
+1. Clone the repository:
+```bash
+   git clone [repo-url]
+   cd [project-folder]
+```
+
+2. Install dependencies:
+```bash
+   npm install
+```
+
+3. Start the development server:
+```bash
+   npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
 
 ## How to Use
 ----
 
 ## Project Structure
 ----
+
 
 ## Documentation
 ----
