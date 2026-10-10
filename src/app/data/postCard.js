@@ -4,6 +4,7 @@ export const postcard= [
 
 {
   id: 1,
+  profileImage: "/assets/Userimage.png",
   username: "TestUser",
   postedAt: "xx/xx/xx at xx:xx",
   subjectTitle: "Subject matter",
@@ -15,7 +16,8 @@ export const postcard= [
   likes: 0,
 }, 
 
-{ id: 2,
+{ id: 2, 
+  profileImage: "/assets/Userimage.png",
   username: "TestUser2",
   postedAt: "xx/xx/xx at xx:xx",
   subjectTitle: "Subject matter",
