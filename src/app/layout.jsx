@@ -1,7 +1,7 @@
 "use client"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./component/Header";
+import PageHeader from "./component/Header";
 import Warning from "./component/Warning";
 import { useEffect, useState } from "react";
 

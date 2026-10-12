@@ -296,23 +296,97 @@
 
     /*change image icon*/
 
-
 }
 
 .Postfeed {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    margin: 133px 18px ;
 }
 
-.post-container {
-    width: 393px;
-    height: 398px;
+.postcard-container {
     background: rgba(143, 197, 228, 0.24);
+    padding: 18px 18px 4px 18px;
+}
+
+.post-interactive {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 5px;
+    border-top: 2px solid black ;
+
+}
+
+.user-details {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
 }
 
 .profile-image {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+}
+
+.username {
+    color: #000;
+    font-family: Inter;
+    font-size: 13.967px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.followbutton {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border-style: none;
+    background-color: #000;
+    padding: 12px 26px;
+    border-radius: 18px;   
+}
+
+.post-image {
+ border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.shard1 {
+    opacity: 35%;
+    width: 415px;
+    height: 751.5px;
+
+    fill: linear-gradient(148deg, rgba(143, 197, 228, 0.00) 18.8%, rgba(167, 191, 255, 0.64) 27.69%, rgba(185, 104, 255, 0.64) 56.58%, rgba(167, 191, 255, 0.64) 83.61%, rgba(143, 197, 228, 0.00) 95.83%);
+
+}
+
+.shard2 {
+    position: sticky;
+
+    opacity: 35%;
+    width: 326.746px;
+    height: 461.062px;
+
+
+    fill: linear-gradient(161deg, rgba(143, 197, 228, 0.00) 26.41%, rgba(167, 191, 255, 0.64) 39.01%, rgba(185, 104, 255, 0.64) 79.97%, rgba(167, 191, 255, 0.64) 118.31%, rgba(143, 197, 228, 0.00) 135.63%);
 }

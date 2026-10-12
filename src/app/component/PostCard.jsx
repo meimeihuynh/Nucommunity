@@ -9,6 +9,7 @@ function PostCard({ post }) {
             <img src={post.profileImage} alt="PP" className="profile-image"/>
             <h2 className="username">{post.username}</h2>
             <button className="followbutton">Follow</button>
+         </div>
             <p className="posttime">{post.postedAt}</p>
             <h1 className="Subject-matter">{post.subjectTitle}</h1>
             <p className="post-description">{post.description}</p>
@@ -18,14 +19,20 @@ function PostCard({ post }) {
             ))}
             </p>
            <h3 className="post-interactive">
+            <span className="Eye-icon">
                 <EyeIcon title="a11y-title" fontSize="1.5rem" />
-                <span>{post.views} views</span>
+                <span>{post.views}</span>
+            </span>
+            <span className="Comment-icon">
                 <ChatElipsisIcon title="a11y-title" fontSize="1.5rem" />
-                <span>{post.comments} comments</span>
+                <span>{post.comments}</span>
+            </span>
+            <span className="Heart-icon">
                 <HeartIcon title="a11y-title" fontSize="1.5rem" />
-                <span>{post.likes} likes</span>
+                <span>{post.likes}</span>
+            </span>
             </h3>
-         </div>
+         
       </div>
     </div>
   );
